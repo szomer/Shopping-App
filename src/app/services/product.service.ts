@@ -30,6 +30,7 @@ export class ProductService {
   // GET Products of Category
   getProductsByCategory(category: string, query?: string) {
     category = this.getCategoryName(category);
+
     return this.http.get<Product[]>(
       `${this.apiUrls.category}/${category}${query}`
     );
@@ -47,7 +48,7 @@ export class ProductService {
         category = "men's%20clothing";
         break;
       case 'women':
-        category = "womens's%20clothing";
+        category = "women's%20clothing";
         break;
     }
     return category;
