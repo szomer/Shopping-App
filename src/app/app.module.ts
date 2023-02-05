@@ -10,6 +10,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { ElectronicsComponent } from './pages/electronics/electronics.component';
 import { JeweleryComponent } from './pages/jewelery/jewelery.component';
 import { ClothingComponent } from './pages/clothing/clothing.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductBannerComponent } from './components/product-banner/product-banner.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { ClothingComponent } from './pages/clothing/clothing.component';
     ElectronicsComponent,
     JeweleryComponent,
     ClothingComponent,
+    ProductComponent,
+    ProductBannerComponent,
+    SliderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
