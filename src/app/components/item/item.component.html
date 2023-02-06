@@ -1,0 +1,11 @@
+<ng-container *ngIf="item">
+  <a class="item" [routerLink]="'/product/' + item.id">
+    <div class="item-image">
+      <img [src]="item.image" />
+    </div>
+    <div class="item-details">
+      <span>{{ item.title }}</span>
+      <span>{{ item.price }}</span>
+    </div>
+  </a>
+</ng-container>

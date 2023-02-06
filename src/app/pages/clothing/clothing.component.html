@@ -1,9 +1,7 @@
-<h1>Men's Clothing</h1>
-<pre
-  >{{ productsMen | json }}
-</pre>
+<div class="wrapper">
+  <h1>Men's Clothing</h1>
+  <app-item-banner [items]="productsMen"></app-item-banner>
 
-<h1>Women's Clothing</h1>
-<pre
-  >{{ productsWomen | json }}
-</pre>
+  <h1>Women's Clothing</h1>
+  <app-item-banner [items]="productsWomen"></app-item-banner>
+</div>
