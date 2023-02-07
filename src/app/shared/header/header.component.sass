@@ -1,14 +1,13 @@
 @import "../../../styles/colors"
 
 header
-
+    background-color: $whiteMedium
     .navbar
         display: flex
         align-items: center
         justify-content: space-between
         padding: 0.5rem 1rem
         height: 65px
-        background-color: $white
         margin: 0
         border-bottom: 1px solid rgba(255, 255, 255, 0.1)
         
@@ -28,10 +27,21 @@ header
                 margin-right: 15px
 
                 a:hover 
-                    color: $greyDark
+                    color: $steelTeal
 
 
         &-search
-            width: 290px
-            background-color: $whiteMedium
-            color: $black
+
+            .btn 
+                margin: 0
+                padding:0
+                
+            .material-icons
+                margin: 0px 7px
+                padding:0
+                position: relative
+                top: 2.5px
+
+                
+           
+           

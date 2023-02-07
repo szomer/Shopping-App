@@ -5,6 +5,7 @@ import {
   style,
   transition,
   animate,
+  group,
 } from '@angular/animations';
 
 import { Product } from 'src/app/models/Product';
@@ -14,10 +15,14 @@ import { Product } from 'src/app/models/Product';
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.sass'],
   animations: [
-    trigger('slideFade', [
-      state('void', style({ opacity: 0 })),
-      transition('void => *', [animate('1s')]),
-      transition('* => void', [animate('500ms')]),
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('300ms ease-in', style({ transform: 'translateX(0%)' })),
+      ]),
+      transition(':leave', [
+        animate('400ms ease-in', style({ transform: 'translateX(-100%)' })),
+      ]),
     ]),
   ],
 })

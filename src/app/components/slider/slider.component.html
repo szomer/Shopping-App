@@ -1,6 +1,6 @@
 <div class="slider">
   <ng-container *ngFor="let product of products; let i = index">
-    <div class="slide" *ngIf="i === currentSlideIndex" @slideFade>
+    <div class="slide" *ngIf="i === currentSlideIndex" @slideInOut>
       <a class="slide-bg" [routerLink]="'/product/' + product.id">
         <img [src]="product.image" alt="" />
       </a>

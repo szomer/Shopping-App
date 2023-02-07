@@ -12,6 +12,8 @@ import { first } from 'rxjs/operators';
 export class ProductComponent implements OnInit {
   product: Product | null = null;
 
+  isFirstOpen = true;
+
   constructor(
     private route: ActivatedRoute,
     private productsService: ProductService

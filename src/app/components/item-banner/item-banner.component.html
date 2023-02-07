@@ -1,9 +1,28 @@
 <div class="container text-center">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-    <ng-container *ngFor="let item of items">
+    <ng-container
+      *ngFor="
+        let item of items
+          | paginate
+            : {
+                itemsPerPage: itemSize,
+                currentPage: page,
+                totalItems: count
+              };
+        let i = index
+      "
+    >
       <div class="col">
         <app-item [item]="item"></app-item>
       </div>
     </ng-container>
   </div>
 </div>
+<pagination-controls
+  class="controls"
+  previousLabel="Prev"
+  nextLabel="Next"
+  [responsive]="true"
+  [autoHide]="true"
+  (pageChange)="onPageChange($event)"
+></pagination-controls>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/Product';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -8,22 +8,15 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./clothing.component.sass'],
 })
 export class ClothingComponent implements OnInit {
-  productsMen: Product[] = [];
-  productsWomen: Product[] = [];
+  products: Product[] = [];
 
   constructor(private productsService: ProductService) {}
 
   ngOnInit(): void {
     this.productsService
-      .getProductsByCategory('men', '')
-      .subscribe((productsMenArr) => {
-        this.productsMen = productsMenArr;
-      });
-
-    this.productsService
       .getProductsByCategory('women', '')
       .subscribe((productsWomenArr) => {
-        this.productsWomen = productsWomenArr;
+        this.products = productsWomenArr;
         console.log(productsWomenArr);
       });
   }

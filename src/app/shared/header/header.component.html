@@ -17,6 +17,25 @@
 
     <a href="" class="navbar-logo" routerLink="/"> Shopping Name </a>
 
-    <div class="navbar-search">Searchbar here</div>
+    <div class="navbar-search">
+      <form
+        class="d-flex"
+        role="search"
+        #search="ngForm"
+        (keyup)="onClickSubmit(search.value)"
+      >
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          name="searchValue"
+          ngModel
+        />
+        <button class="btn btn-outline-success" type="submit">
+          <span class="material-icons">search</span>
+        </button>
+      </form>
+    </div>
   </nav>
 </header>

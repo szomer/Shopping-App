@@ -1,12 +1,39 @@
 <div class="wrapper">
-  <ng-container *ngIf="product">
-    <span>{{ product.id }}</span>
-    <span>{{ product.title }}</span>
-    <span>{{ product.price }}</span>
-    <span>{{ product.category }}</span>
-    <span>{{ product.description }}</span>
-    <span>{{ product.image }}</span>
-    <span>{{ product.rating.rate }}</span>
-    <span>{{ product.rating.count }}</span>
-  </ng-container>
+  <div class="container text-center">
+    <div class="row">
+      <ng-container *ngIf="product">
+        <div class="col">
+          <img [src]="product.image" />
+        </div>
+
+        <div class="col">
+          <div class="details">
+            <div class="details-head">
+              <span class="details-head-title">{{ product.title }}</span>
+              <span class="details-head-price">{{
+                product.price | currency
+              }}</span>
+            </div>
+
+            <accordion [isAnimated]="true" class="details-more">
+              <accordion-group heading="Description" [isOpen]="isFirstOpen">
+                <span class="details-more-desc">{{ product.description }}</span>
+              </accordion-group>
+              <accordion-group heading="Ratings">
+                <span class="details-more-rating"
+                  ><i class="material-icons">star</i
+                  >{{ product.rating.rate }}/10</span
+                >
+                <span>{{ product.rating.count }} Reviews</span>
+              </accordion-group>
+              <accordion-group heading="Additional Information">
+                <span>Product ID: {{ product.id }}</span>
+                <span>{{ product.category }}</span>
+              </accordion-group>
+            </accordion>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
 </div>
