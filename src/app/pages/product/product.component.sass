@@ -1,13 +1,28 @@
 @import "../../../styles/colors"
 
+.wrapper
+    margin: 2rem 0rem
+
+.row
+    background-color: $white
+    box-shadow: 0px 0px 10px $steelTeal
+
+.img-div
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
 img
-    max-width: 400px
-    margin-bottom: 4rem
+    width: 100%
+    padding: 30px
 
 .details
-    margin-top: 2rem
+    margin: 3rem 1rem
     display: flex
     flex-direction: column
+    justify-content: center
 
     div 
         display: block
@@ -18,21 +33,43 @@ img
 
     &-head
         text-align: center
-        margin-bottom: 10px
+        margin-bottom: 0.5rem
         &-title 
-            font-weight: bold 
-            font-size: 2rem
+            color: $greyDark
+            font-weight: 500 
+            font-size: 1.7rem
         &-price 
-            font-size: 1.3rem
+            color: $steelTeal
+            font-size: 1.2rem
 
     &-more
+        color: $greyDark
         text-align: right
-        font-size: 1rem
+        font-size: 0.9rem
+    
         &-rating
-            font-weight: bold
+            font-weight: 500
             font-size: 1.1rem
             .material-icons 
                 margin-right: 5px
                 color: $gold
-                font-size: 18px 
-        
+                font-size: 20px 
+                position: relative
+                top: 3px
+
+
+::ng-deep .panel-heading
+    background-color: $whiteMedium
+
+::ng-deep  .btn 
+    text-decoration: none
+    color: $steelTeal
+
+::ng-deep  .btn:hover
+    color: $greyDark
+    text-shadow: 0px 0px 20px $white
+
+::ng-deep .panel-body
+    color: $greyDark
+    
+    

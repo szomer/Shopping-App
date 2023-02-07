@@ -1,12 +1,31 @@
 @import "../../../styles/colors"
 
-    
+.no-gutters
+    margin-right: 0
+    margin-left: 0
+
+    > .col,
+    > [class*="col-"]
+        padding-right: 0
+        padding-left: 0
+
+
+.container
+    background-color: $white
+    padding: 50px
+    box-shadow: 0px 0px 10px $steelTeal
+
 .controls
     text-align: center
     padding: 20px
+
 
 .controls ::ng-deep .ngx-pagination
     font-size: 1.1rem
 
 .controls ::ng-deep .ngx-pagination .current
-    background: $greyMedium
+    background: $white
+    color: $steelTeal
+
+::ng-deep .controls span 
+    color: $steelTeal

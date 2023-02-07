@@ -4,8 +4,8 @@
       <img [src]="item.image" />
     </div>
     <div class="item-details">
-      <span>{{ item.title }}</span>
-      <span>{{ item.price }}</span>
+      <span class="item-details-title">{{ item.title }}</span>
+      <span class="item-details-price">{{ item.price | currency }}</span>
     </div>
   </a>
 </ng-container>

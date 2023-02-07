@@ -7,6 +7,8 @@
     height: 35rem
     position: relative
     background-color: $white
+    box-shadow: 0px 0px 10px $steelTeal
+    
     .slide
         position: absolute
         display: flex
@@ -39,31 +41,31 @@
             left: 3rem
             color: $greyDark
             .name
-                font-size: 2.8rem 
+                font-size: 2.5rem 
             .meta 
                 margin: 1.5rem 0rem
                 font-size: 1.4rem
                
                 .info
                     color: $steelTeal
-                    font-weight: bolder
+                    font-weight: 500
                     display: flex
                     
                     > span:not(:last-child):after 
                         content: '|'
-                        margin-right: 9px
-                        margin-left: 9px
+                        margin-right: 14px
+                        margin-left: 14px
                     .rating
                         display: flex
                         align-items: center
                         .material-icons
                             margin-right: 5px
                             color: $gold
-                            text-shadow: 0px 0px 10px white
+                            text-shadow: 0px 0px 2px $white
                         &-value
                             
             .description
-                font-size: 1.3rem
+                font-size: 1.1rem
                 line-height: 1.6
                 display: -webkit-box
                 -webkit-line-clamp: 2

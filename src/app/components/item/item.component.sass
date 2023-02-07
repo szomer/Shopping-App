@@ -2,23 +2,41 @@
 
 
 .item
-    background-color: $whitePink
+    background-color: $white
     position: relative
-    display: block
-    min-height: 450px
-    border-radius: 5px
-    margin: 10px 0px
-    border: 1px solid $greyDark
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 400px
+
+    margin: 0
     transition: all .2s ease-in-out
     opacity: 1
 
+
     img 
-        width: 100%
-        border-radius: 5px
-        height: 380px
+        height: 300px
+        width: 250px
+        border: 1px solid $steelTeal
+        margin: 20px
+        margin-bottom: 7px
         object-fit: cover
+        
 
     &-details
+        margin: 0px 50px
+        &-title 
+            font-size: 0.9rem
+            display: -webkit-box
+            -webkit-line-clamp: 2
+            -webkit-box-orient: vertical
+            overflow: hidden
+            max-width: 100%
+        &-price 
+            font-size: 1rem
+            font-weight: 500
+            color: $steelTeal
+
 
 
 .item:hover
