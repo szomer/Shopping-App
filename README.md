@@ -12,9 +12,9 @@ Technologies used:
 ## Wireframes
 
 <p align="center">
-  <img src="img/wireframes.PNG?raw=true" alt="App screenshot home"/>
+  <img src="img/wireframes.PNG?raw=true" alt="App wireframes"/>
   <br>
-  <i>Home page with animated slider showcasing products</i>
+  <i>Wireframes of the application</i>
 </p>
 
 ---
@@ -24,11 +24,11 @@ Technologies used:
 <code>/</code>
 
 <p align="center">
-  <img src="img/home.JPG?raw=true" alt="App screenshot home"/>
+  <img src="img/home.JPG?raw=true" alt="App screenshot home - slider"/>
   <br>
-  <img src="img/home2.JPG?raw=true" alt="App screenshot home"/>
+  <img src="img/home2.JPG?raw=true" alt="App screenshot home - paginator"/>
   <br>
-  <i>Home page with paginator to view products</i>
+  <i>Home page with slider and paginator to view all products</i>
 </p>
 
 ---
