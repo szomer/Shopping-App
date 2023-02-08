@@ -12,7 +12,7 @@ Technologies used:
 ## Wireframes
 
 <p align="center">
-  <img src="img/wireframes.PNG?raw=true" alt="App wireframes"/>
+  <img src="img/wireframes.jpg?raw=true" alt="App wireframes"/>
   <br>
   <i>Wireframes of the application</i>
 </p>
