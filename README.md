@@ -1,5 +1,7 @@
 # Shopping App
 
+5 feb 2023
+
 Technologies used:
 
 - Frontend framework: [Angular](https://angular.io)
