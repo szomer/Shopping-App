@@ -1,6 +1,6 @@
 # Shopping App
 
-5 feb 2023
+Front end application for shopping electronics/jewelty/clothing. To view click [HERE](https://shopping-9ce24.web.app/) (hosted on Firebase).
 
 Technologies used:
 
@@ -9,9 +9,7 @@ Technologies used:
 - CSS framework: bootstrap ([ng](https://ng-bootstrap.github.io) / [ngx](https://valor-software.com/ngx-bootstrap))
 - JS library: [RxJS](https://rxjs.dev/)
 
----
-
-## Wireframes
+## 1. Wireframes
 
 <p align="center">
   <img src="img/wireframes.jpg?raw=true" alt="App wireframes"/>
@@ -19,36 +17,13 @@ Technologies used:
   <i>Wireframes of the application</i>
 </p>
 
----
+## 2. Screenshot of the App
 
-## Screenshots of the App
-
-<code>/</code>
-
-<p align="center">
+<p>
+  The Home Page
+  <br/>
   <img src="img/home.JPG?raw=true" alt="App screenshot home - slider"/>
   <br>
   <img src="img/home2.JPG?raw=true" alt="App screenshot home - paginator"/>
   <br>
-  <i>Home page with slider and paginator to view all products</i>
-</p>
-
----
-
-<code>/clothing</code>
-
-<p align="center">
-  <img src="img/clothing.JPG?raw=true" alt="App screenshot clothing"/>
-  <br>
-  <i>Clothing page</i>
-</p>
-
----
-
-<code>/clothing/women</code> <code>/clothing/men</code>
-
-<p align="center">
-  <img src="img/clothing2.JPG?raw=true" alt="App screenshot women's clothing"/>
-  <br>
-  <i>Women's clothing page</i>
 </p>
